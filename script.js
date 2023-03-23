@@ -19,8 +19,8 @@ $(function () {
  
   //while updating the class, we can check if there is a localStorage with 
   //the key that matches our id and add that into the textarea.
-  if (localStorage.getItem(e)) {
-    $(`#hour-${e}>textarea`).val(localStorage.getItem(e))
+  if (localStorage.getItem(`hour-${e}`)) {
+    $(`#hour-${e}>textarea`).val(localStorage.getItem(`hour-${e}`))
   }
   
 })
